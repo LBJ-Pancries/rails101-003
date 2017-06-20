@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+pust '建立一个账号'
+u = User.new
+u.email = "admin@1.com"
+u.password = "abcabc"
+u.password_confirmation = "abcabc"
+u.save
+
+pust '建立四个groups'
+Group.create!(title: '123', description: '123', user_id: '1')
