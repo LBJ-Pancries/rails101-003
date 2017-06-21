@@ -5,9 +5,4 @@ class Account::PostsController < ApplicationController
     @posts = current_user.posts
   end
 
-  def show
-    @post = Post.find(params[:id])
-  end
-
-
 end
